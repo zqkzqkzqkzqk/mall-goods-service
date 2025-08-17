@@ -1,0 +1,108 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.mall:mall-goods-bootstrap:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 76, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] mall-goods-service                                                 [pom]
+[INFO] mall-goods-common                                                  [jar]
+[INFO] mall-goods-domain                                                  [jar]
+[INFO] mall-goods-application                                             [jar]
+[INFO] mall-goods-adapter                                                 [jar]
+[INFO] mall-goods-bootstrap                                               [jar]
+[INFO] 
+[INFO] --------------------< com.mall:mall-goods-service >---------------------
+[INFO] Building mall-goods-service 0.0.1-SNAPSHOT                         [1/6]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] ---------------------< com.mall:mall-goods-common >---------------------
+[INFO] Building mall-goods-common 0.0.1-SNAPSHOT                          [2/6]
+[INFO]   from mall-goods-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mall-goods-common ---
+[INFO] skip non existing resourceDirectory /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ mall-goods-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[11,45] 程序包com.fasterxml.jackson.datatype.jsr310不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[12,51] 程序包com.fasterxml.jackson.datatype.jsr310.deser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[13,51] 程序包com.fasterxml.jackson.datatype.jsr310.deser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[14,51] 程序包com.fasterxml.jackson.datatype.jsr310.deser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[15,49] 程序包com.fasterxml.jackson.datatype.jsr310.ser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[16,49] 程序包com.fasterxml.jackson.datatype.jsr310.ser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[17,49] 程序包com.fasterxml.jackson.datatype.jsr310.ser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[22,47] 程序包org.springframework.http.converter.json不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[73,12] 找不到符号
+  符号:   类 MappingJackson2HttpMessageConverter
+  位置: 类 com.mall.goods.common.config.JacksonConfig
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[6,49] 程序包org.springframework.data.redis.connection不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[7,43] 程序包org.springframework.data.redis.core不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[8,49] 程序包org.springframework.data.redis.serializer不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[9,49] 程序包org.springframework.data.redis.serializer不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[21,56] 找不到符号
+  符号:   类 RedisConnectionFactory
+  位置: 类 com.mall.user.common.config.RedisConfig
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[21,12] 找不到符号
+  符号:   类 RedisTemplate
+  位置: 类 com.mall.user.common.config.RedisConfig
+[INFO] 15 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for mall-goods-service 0.0.1-SNAPSHOT:
+[INFO] 
+[INFO] mall-goods-service ................................. SUCCESS [  0.001 s]
+[INFO] mall-goods-common .................................. FAILURE [  0.936 s]
+[INFO] mall-goods-domain .................................. SKIPPED
+[INFO] mall-goods-application ............................. SKIPPED
+[INFO] mall-goods-adapter ................................. SKIPPED
+[INFO] mall-goods-bootstrap ............................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.084 s
+[INFO] Finished at: 2025-08-08T12:24:08+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project mall-goods-common: Compilation failure: Compilation failure: 
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[11,45] 程序包com.fasterxml.jackson.datatype.jsr310不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[12,51] 程序包com.fasterxml.jackson.datatype.jsr310.deser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[13,51] 程序包com.fasterxml.jackson.datatype.jsr310.deser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[14,51] 程序包com.fasterxml.jackson.datatype.jsr310.deser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[15,49] 程序包com.fasterxml.jackson.datatype.jsr310.ser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[16,49] 程序包com.fasterxml.jackson.datatype.jsr310.ser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[17,49] 程序包com.fasterxml.jackson.datatype.jsr310.ser不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[22,47] 程序包org.springframework.http.converter.json不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/JacksonConfig.java:[73,12] 找不到符号
+[ERROR]   符号:   类 MappingJackson2HttpMessageConverter
+[ERROR]   位置: 类 com.mall.goods.common.config.JacksonConfig
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[6,49] 程序包org.springframework.data.redis.connection不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[7,43] 程序包org.springframework.data.redis.core不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[8,49] 程序包org.springframework.data.redis.serializer不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[9,49] 程序包org.springframework.data.redis.serializer不存在
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[21,56] 找不到符号
+[ERROR]   符号:   类 RedisConnectionFactory
+[ERROR]   位置: 类 com.mall.user.common.config.RedisConfig
+[ERROR] /Users/wuyunbin/IdeaProjects/mall/mall-goods-service/mall-goods-common/src/main/java/com/mall/goods/common/config/RedisConfig.java:[21,12] 找不到符号
+[ERROR]   符号:   类 RedisTemplate
+[ERROR]   位置: 类 com.mall.user.common.config.RedisConfig
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :mall-goods-common

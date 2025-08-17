@@ -1,0 +1,123 @@
+package com.mall.goods.common.enums;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+/**
+ * 响应状态码枚举
+ * 格式：USER + 5位数字，总长度9位
+ * 00000-00999: 通用状态码
+ * 01000-01999: 认证授权相关
+ * 02000-02999: 用户信息相关
+ * 03000-03999: 验证码相关
+ * 04000-04999: 注册登录相关
+ * 05000-05999: 用户权限相关
+ * 06000-06999: Spring Security相关
+ * 99000-99999: 系统错误相关
+ */
+@Getter
+@AllArgsConstructor
+public enum Resp {
+    // 通用状态码
+    SUCCESS("USER00000", "success"),
+    FAIL("USER99999", "fail"),
+    BAD_REQUEST("USER00400", "请求错误"),
+    INVALID_PARAM("USER00401", "非法参数"),
+    JSON_FORMAT_ERROR("USER00402", "JSON格式错误"),
+    
+    // 认证授权相关
+    UNAUTHORIZED("USER01000", "未授权"),
+
+    // Token相关
+    ACCESS_TOKEN_MISSING("USER01100", "缺少访问令牌"),
+    ACCESS_TOKEN_INVALID("USER01101", "访问令牌无效"),
+    ACCESS_TOKEN_EXPIRED("USER01102", "访问令牌已过期"),
+    ACCESS_TOKEN_REVOKED("USER01103", "访问令牌已被撤销"),
+    ACCESS_TOKEN_MALFORMED("USER01104", "访问令牌格式错误"),
+
+    REFRESH_TOKEN_MISSING("USER01200", "缺少刷新令牌"),
+    REFRESH_TOKEN_INVALID("USER01201", "刷新令牌无效"),
+    REFRESH_TOKEN_EXPIRED("USER01202", "刷新令牌已过期"),
+    REFRESH_TOKEN_REVOKED("USER01203", "刷新令牌已被撤销"),
+    REFRESH_TOKEN_MALFORMED("USER01204", "刷新令牌格式错误"),
+
+    // 兼容旧版本
+    TOKEN_MISSING("USER01001", "缺少token"),
+    INVALID_TOKEN("USER01002", "token无效"),
+    INVALID_REFRESH_TOKEN("USER01003", "refresh_token无效"),
+    TOKEN_EXPIRED("USER01005", "token已过期"),
+
+    AUTHENTICATION_FAILED("USER01004", "认证失败"),
+    INSUFFICIENT_PERMISSIONS("USER01006", "权限不足"),
+
+    // 用户信息相关
+    USER_NOT_FOUND("USER02000", "用户不存在"),
+    MEMBER_NOT_EXIST("USER02001", "用户不存在"),
+    UPDATE_FAILED("USER02002", "更新失败"),
+    USER_DISABLED("USER02003", "用户已被禁用"),
+    USER_LOCKED("USER02004", "用户已被锁定"),
+    USER_DELETED("USER02005", "用户已被删除"),
+    USER_INFO_UPDATE_FAILED("USER02006", "用户信息更新失败"),
+    USER_QUERY_FAILED("USER02007", "用户查询失败"),
+    OPENID_MISSING("USER02008", "缺少openid"),
+
+    // 验证码相关
+    CAPTCHA_MISSING("USER03000", "缺少验证码"),
+    CAPTCHA_ERROR("USER03001", "验证码错误"),
+    CAPTCHA_EXPIRED("USER03002", "验证码已过期"),
+    CAPTCHA_SEND_FAILED("USER03003", "验证码发送失败"),
+    CAPTCHA_SEND_LIMIT("USER03004", "验证码发送频率超限"),
+
+    // 注册登录相关
+    INVALID_USERNAME("USER04000", "用户名不存在或密码不正确"),
+    INVALID_PASSWORD("USER04001", "用户名不存在或密码不正确"),
+    USERNAME_EMPTY("USER04002", "用户名不能为空"),
+    PASSWORD_EMPTY("USER04003", "密码不能为空"),
+    USERNAME_EXISTS("USER04004", "用户名已存在"),
+    USERNAME_FORMAT_ERROR("USER04005", "用户名格式错误"),
+    PASSWORD_STRENGTH_INSUFFICIENT("USER04006", "密码强度不足"),
+    PASSWORD_EXPIRED("USER04007", "密码已过期"),
+    MOBILE_IS_REGISTERED("USER04008", "手机号已被注册"),
+    MOBILE_FORMAT_ERROR("USER04009", "手机号格式错误"),
+    EMAIL_EXISTS("USER04010", "邮箱已被注册"),
+    EMAIL_FORMAT_ERROR("USER04011", "邮箱格式错误"),
+    LOGIN_ATTEMPTS_EXCEEDED("USER04012", "登录尝试次数过多"),
+    THIRD_PARTY_LOGIN_FAILED("USER04013", "第三方登录失败"),
+    USER_REGISTER_FAILED("USER04014", "用户注册失败"),
+
+    // 用户权限相关
+    ROLE_NOT_EXISTS("USER05000", "角色不存在"),
+    PERMISSION_DENIED("USER05001", "权限被拒绝"),
+    SESSION_EXPIRED("USER05002", "会话已过期"),
+    ROLE_ASSIGNMENT_FAILED("USER05003", "角色分配失败"),
+    PERMISSION_ASSIGNMENT_FAILED("USER05004", "权限分配失败"),
+    ROLE_DELETION_FAILED("USER05005", "角色删除失败"),
+    PERMISSION_DELETION_FAILED("USER05006", "权限删除失败"),
+
+    // Spring Security相关错误码
+    SECURITY_AUTHENTICATION_FAILED("USER06000", "认证失败"),
+    SECURITY_ACCESS_DENIED("USER06001", "访问被拒绝"),
+    SECURITY_ACCOUNT_EXPIRED("USER06002", "账户已过期"),
+    SECURITY_ACCOUNT_LOCKED("USER06003", "账户已锁定"),
+    SECURITY_ACCOUNT_DISABLED("USER06004", "账户已禁用"),
+    SECURITY_CREDENTIALS_EXPIRED("USER06005", "凭证已过期"),
+    SECURITY_BAD_CREDENTIALS("USER06006", "错误的凭证"),
+    SECURITY_USERNAME_NOT_FOUND("USER06007", "用户名不存在"),
+    SECURITY_USERNAME_PASSWORD_NOT_FOUND("USER06008", "用户名或密码错误"),
+    SECURITY_SESSION_AUTHENTICATION_ERROR("USER06009", "会话认证错误"),
+    SECURITY_INSUFFICIENT_AUTHENTICATION("USER06010", "认证信息不足"),
+    SECURITY_PROVIDER_NOT_FOUND("USER06011", "认证提供者不存在"),
+    SECURITY_CSRF_TOKEN_INVALID("USER06012", "CSRF令牌无效"),
+    SECURITY_CSRF_TOKEN_MISSING("USER06013", "缺少CSRF令牌"),
+    SECURITY_METHOD_ACCESS_DENIED("USER06014", "方法访问被拒绝"),
+    SECURITY_PRE_AUTH_ERROR("USER06015", "预认证错误"),
+    SECURITY_AUTHENTICATION_SERVICE_EXCEPTION("USER06016", "认证服务异常"),
+    SECURITY_OAUTH2_CLIENT_AUTHENTICATION_FAILED("USER06025", "OAuth2客户端认证失败"),
+    SECURITY_OAUTH2_USER_AUTHENTICATION_FAILED("USER06026", "OAuth2用户认证失败"),
+    SECURITY_OAUTH2_TOKEN_EXPIRED("USER06027", "OAuth2令牌已过期"),
+    SECURITY_OAUTH2_TOKEN_INVALID("USER06028", "OAuth2令牌无效"),
+    SECURITY_OAUTH2_TOKEN_REVOKED("USER06029", "OAuth2令牌已被撤销");
+
+    private final String code;
+    private final String message;
+}
