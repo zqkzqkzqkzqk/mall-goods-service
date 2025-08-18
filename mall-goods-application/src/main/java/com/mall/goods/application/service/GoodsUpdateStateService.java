@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * 商品状态更新服务实现用例
+ * @author zhangqiankai
  */
 @Service
 public class GoodsUpdateStateService implements GoodsUpdateStateUseCase {

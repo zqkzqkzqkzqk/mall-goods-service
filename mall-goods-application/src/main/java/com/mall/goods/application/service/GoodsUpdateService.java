@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * 商品更新服务实现用例
+ * @author zhangqiankai
  */
 @Service
 public class GoodsUpdateService implements GoodsUpdateUseCase {

@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * 商品创建服务用例接口
+ * @author zhangqiankai
  */
 public interface GoodsCreateUseCase {
     /**

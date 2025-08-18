@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * 品牌删除服务实现用例
+ * @author zhangqiankai
  */
 @Service
 public class BrandDeleteService implements BrandDeleteUseCase {

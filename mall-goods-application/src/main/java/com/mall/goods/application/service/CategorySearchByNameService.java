@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * 根据名称搜索分类服务实现用例
+ * @author zhangqiankai
  */
 @Service
 public class CategorySearchByNameService implements CategorySearchByNameUseCase {

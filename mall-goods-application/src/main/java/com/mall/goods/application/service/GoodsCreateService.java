@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * 商品创建服务用实现用例
+ * @author zhangqiankai
  */
 @Service
 public class GoodsCreateService implements GoodsCreateUseCase {

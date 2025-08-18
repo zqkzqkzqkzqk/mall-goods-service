@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * 品牌列表服务实现用例
+ * @author zhangqiankai
  */
 @Service
 public class BrandListService implements BrandListUseCase {

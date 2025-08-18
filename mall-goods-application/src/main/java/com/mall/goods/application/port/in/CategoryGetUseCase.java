@@ -6,6 +6,7 @@ import java.util.Optional;
 
 /**
  * 分类详情获取服务用例接口
+ * @author zhangqiankai
  */
 public interface CategoryGetUseCase {
     /**

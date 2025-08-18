@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * 根据名称搜索分类服务用例接口
+ * @author zhangqiankai
  */
 public interface CategorySearchByNameUseCase {
     /**

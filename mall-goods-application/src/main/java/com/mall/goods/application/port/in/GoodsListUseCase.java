@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * 商品列表服务用例接口
+ * @author zhangqiankai
  */
 public interface GoodsListUseCase {
     /**

@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * 品牌列表服务用例接口
+ * @author zhangqiankai
  */
 public interface BrandListUseCase {
     /**

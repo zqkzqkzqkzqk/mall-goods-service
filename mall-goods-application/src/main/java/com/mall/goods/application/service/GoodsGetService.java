@@ -8,6 +8,7 @@ import java.util.Optional;
 
 /**
  * 商品详情获取服务实现用例
+ * @author zhangqiankai
  */
 @Service
 public class GoodsGetService implements GoodsGetUseCase {

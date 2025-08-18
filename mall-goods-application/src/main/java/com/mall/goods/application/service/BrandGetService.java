@@ -8,6 +8,7 @@ import java.util.Optional;
 
 /**
  * 品牌获取服务实现用例
+ * @author zhangqiankai
  */
 @Service
 public class BrandGetService implements BrandGetUseCase {

@@ -2,6 +2,7 @@ package com.mall.goods.application.port.in;
 
 /**
  * 分类更新服务用例接口
+ * @author zhangqiankai
  */
 public interface CategoryUpdateUseCase {
     /**

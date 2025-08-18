@@ -6,6 +6,7 @@ import java.util.Optional;
 
 /**
  * 商品详情获取服务用例接口
+ * @author zhangqiankai
  */
 public interface GoodsGetUseCase {
     /**

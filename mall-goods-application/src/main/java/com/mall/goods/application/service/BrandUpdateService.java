@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * 品牌更新服务实现用例
+ * @author zhangqiankai
  */
 @Service
 public class BrandUpdateService implements BrandUpdateUseCase {

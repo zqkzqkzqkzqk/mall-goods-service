@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * 根据名称获取品牌列表服务用例接口
+ * @author zhangqiankai
  */
 public interface BrandSearchByNameUseCase {
     /**

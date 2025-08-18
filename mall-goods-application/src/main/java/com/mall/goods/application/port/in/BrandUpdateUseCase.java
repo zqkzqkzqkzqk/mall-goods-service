@@ -4,6 +4,7 @@ import com.mall.goods.application.command.CreateBrandCommand;
 
 /**
  * 品牌更新服务用例接口
+ * @author zhangqiankai
  */
 public interface BrandUpdateUseCase {
     /**

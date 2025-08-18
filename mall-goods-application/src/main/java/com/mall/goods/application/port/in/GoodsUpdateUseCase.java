@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * 商品更新服务用例接口
+ * @author zhangqiankai
  */
 public interface GoodsUpdateUseCase {
     /**
