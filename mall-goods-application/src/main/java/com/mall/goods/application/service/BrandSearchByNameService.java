@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * 根据名称获取品牌列表服务实现用例
+ */
 @Service
 public class BrandSearchByNameService implements BrandSearchByNameUseCase {
     @Override

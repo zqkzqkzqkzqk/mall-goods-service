@@ -2,6 +2,9 @@ package com.mall.goods.application.port.in;
 
 import com.mall.goods.application.command.CreateBrandCommand;
 
+/**
+ * 品牌创建服务用例接口
+ */
 public interface BrandCreateUseCase {
     /**
      * 创建品牌

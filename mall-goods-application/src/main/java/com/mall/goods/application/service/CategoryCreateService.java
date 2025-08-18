@@ -3,6 +3,9 @@ package com.mall.goods.application.service;
 import com.mall.goods.application.port.in.CategoryCreateUseCase;
 import org.springframework.stereotype.Service;
 
+/**
+ * 分类创建服务实现用例
+ */
 @Service
 public class CategoryCreateService implements CategoryCreateUseCase {
     @Override

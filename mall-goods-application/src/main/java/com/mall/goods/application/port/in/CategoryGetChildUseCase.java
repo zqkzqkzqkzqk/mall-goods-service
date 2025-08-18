@@ -4,6 +4,9 @@ import com.mall.goods.application.dto.CategoryResponse;
 
 import java.util.List;
 
+/**
+ * 获取子分类列表服务用例接口
+ */
 public interface CategoryGetChildUseCase {
     /**
      * 获取子分类列表

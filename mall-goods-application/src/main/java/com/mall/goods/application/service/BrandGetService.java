@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+/**
+ * 品牌获取服务实现用例
+ */
 @Service
 public class BrandGetService implements BrandGetUseCase {
     @Override

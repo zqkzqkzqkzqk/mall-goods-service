@@ -1,5 +1,8 @@
 package com.mall.goods.application.port.in;
 
+/**
+ * 商品删除服务用例接口
+ */
 public interface GoodsDeleteUseCase {
     /**
      * 删除商品

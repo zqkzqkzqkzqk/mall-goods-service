@@ -4,6 +4,9 @@ import com.mall.goods.application.dto.BrandResponse;
 
 import java.util.Optional;
 
+/**
+ * 品牌获取服务用例接口
+ */
 public interface BrandGetUseCase {
     /**
      * 获取品牌详情

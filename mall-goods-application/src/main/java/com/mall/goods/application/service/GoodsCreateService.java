@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * 商品创建服务用实现用例
+ */
 @Service
 public class GoodsCreateService implements GoodsCreateUseCase {
     @Override

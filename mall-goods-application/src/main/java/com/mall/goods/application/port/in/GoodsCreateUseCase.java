@@ -3,6 +3,9 @@ package com.mall.goods.application.port.in;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * 商品创建服务用例接口
+ */
 public interface GoodsCreateUseCase {
     /**
      * 创建商品

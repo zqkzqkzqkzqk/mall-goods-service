@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * 根据层级获取分类列表服务实现用例
+ */
 @Service
 public class CategoryGetByLevelService implements CategoryGetByLevelUseCase {
     @Override

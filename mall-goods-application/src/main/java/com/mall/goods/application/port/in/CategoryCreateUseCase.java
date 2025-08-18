@@ -1,5 +1,8 @@
 package com.mall.goods.application.port.in;
 
+/**
+ * 分类创建服务用例接口
+ */
 public interface CategoryCreateUseCase {
     /**
      * 创建分类

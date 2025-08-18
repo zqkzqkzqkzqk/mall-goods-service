@@ -5,6 +5,9 @@ import com.mall.goods.application.dto.GoodsResponse;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * 商品列表服务用例接口
+ */
 public interface GoodsListUseCase {
     /**
      * 获取商品列表

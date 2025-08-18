@@ -4,6 +4,9 @@ import com.mall.goods.application.dto.CategoryResponse;
 
 import java.util.List;
 
+/**
+ * 根据名称搜索分类服务用例接口
+ */
 public interface CategorySearchByNameUseCase {
     /**
      * 根据名称搜索分类

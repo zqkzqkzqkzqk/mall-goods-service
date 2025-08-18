@@ -4,6 +4,9 @@ import com.mall.goods.application.dto.GoodsResponse;
 
 import java.util.Optional;
 
+/**
+ * 商品详情获取服务用例接口
+ */
 public interface GoodsGetUseCase {
     /**
      * 获取商品详情

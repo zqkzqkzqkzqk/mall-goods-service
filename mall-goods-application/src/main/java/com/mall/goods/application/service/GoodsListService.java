@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * 商品列表服务实现用例
+ */
 @Service
 public class GoodsListService implements GoodsListUseCase {
     @Override

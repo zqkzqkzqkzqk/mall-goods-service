@@ -4,6 +4,9 @@ import com.mall.goods.application.command.CreateBrandCommand;
 import com.mall.goods.application.port.in.BrandCreateUseCase;
 import org.springframework.stereotype.Service;
 
+/**
+ * 品牌创建服务实现用例
+ */
 @Service
 public class BrandCreateService implements BrandCreateUseCase {
     @Override

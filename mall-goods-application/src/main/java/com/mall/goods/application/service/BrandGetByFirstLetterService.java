@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * 根据首字母获取品牌列表服务实现用例
+ */
 @Service
 public class BrandGetByFirstLetterService implements BrandGetByFirstLetterUseCase {
     @Override

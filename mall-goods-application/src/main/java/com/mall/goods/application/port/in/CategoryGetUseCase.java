@@ -4,6 +4,9 @@ import com.mall.goods.application.dto.CategoryResponse;
 
 import java.util.Optional;
 
+/**
+ * 分类详情获取服务用例接口
+ */
 public interface CategoryGetUseCase {
     /**
      * 获取分类详情

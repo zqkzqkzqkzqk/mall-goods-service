@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+/**
+ * 商品详情获取服务实现用例
+ */
 @Service
 public class GoodsGetService implements GoodsGetUseCase {
     @Override

@@ -1,5 +1,8 @@
 package com.mall.goods.application.port.in;
 
+/**
+ * 品牌删除服务用例接口
+ */
 public interface BrandDeleteUseCase {
     /**
      * 删除品牌

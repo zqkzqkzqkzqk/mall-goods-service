@@ -3,6 +3,9 @@ package com.mall.goods.application.port.in;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * 商品更新服务用例接口
+ */
 public interface GoodsUpdateUseCase {
     /**
      * 更新商品
