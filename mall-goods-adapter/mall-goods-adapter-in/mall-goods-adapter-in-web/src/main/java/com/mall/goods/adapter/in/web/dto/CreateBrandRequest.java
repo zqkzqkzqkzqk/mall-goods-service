@@ -1,8 +1,9 @@
 package com.mall.goods.adapter.in.web.dto;
 
+import jakarta.validation.constraints.NotBlank;
+
 /**
  * 创建品牌DTO
- * @param applyState
  * @param brandEnglish
  * @param brandImage
  * @param brandInitial
@@ -10,54 +11,49 @@ package com.mall.goods.adapter.in.web.dto;
  * @param brandSort
  * @param isRecommend
  * @param showType
- * @param storeId
  * @param createBy
  * @param updateBy
  */
-public record CreateBrandCommand(
-        /**
-         * 申请状态
-         */
-        String applyState,
+public record CreateBrandRequest(
         /**
          * 品牌英文名
          */
+        @NotBlank(message = "品牌英文名不能为空")
         String brandEnglish,
         /**
          * 品牌图片
          */
+        @NotBlank(message = "品牌图片不能为空")
         String brandImage,
         /**
          * 品牌首字母
          */
+        @NotBlank(message = "品牌首字母不能为空")
         String brandInitial,
         /**
          * 品牌中文名
          */
+        @NotBlank(message = "品牌中文名不能为空")
         String brandName,
         /**
          * 品牌排序
          */
+        @NotBlank(message = "品牌排序不能为空")
         String brandSort,
         /**
          * 是否推荐
          */
+        @NotBlank(message = "是否推荐不能为空")
         String isRecommend,
         /**
          * 是否显示
          */
+        @NotBlank(message = "是否显示不能为空")
         String showType,
-        /**
-         * 店铺ID
-         */
-        String storeId,
         /**
          * 创建人
          */
-        String createBy,
-        /**
-         * 更新人
-         */
-        String updateBy
+        @NotBlank(message = "创建人不能为空")
+        String createBy
 )
 {}

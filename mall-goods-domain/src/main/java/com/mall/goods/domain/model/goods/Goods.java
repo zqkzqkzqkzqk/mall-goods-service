@@ -17,10 +17,18 @@ public class Goods {
      */
     public Goods(GoodsId goodsId, GoodsCommonId commonId, String goodsSpecs, 
                 String goodsFullSpecs, BigDecimal goodsPrice0, Integer goodsStorage) {
-        if (goodsId == null) throw new RuntimeException("商品SKU ID不能为空");
-        if (commonId == null) throw new RuntimeException("商品ID不能为空");
-        if (goodsPrice0 == null) throw new RuntimeException("商品价格不能为空");
-        if (goodsStorage == null) throw new RuntimeException("商品库存不能为空");
+        if (goodsId == null) {
+            throw new RuntimeException("商品SKU ID不能为空");
+        }
+        if (commonId == null) {
+            throw new RuntimeException("商品ID不能为空");
+        }
+        if (goodsPrice0 == null) {
+            throw new RuntimeException("商品价格不能为空");
+        }
+        if (goodsStorage == null) {
+            throw new RuntimeException("商品库存不能为空");
+        }
         
         this.goodsId = goodsId;
         this.commonId = commonId;

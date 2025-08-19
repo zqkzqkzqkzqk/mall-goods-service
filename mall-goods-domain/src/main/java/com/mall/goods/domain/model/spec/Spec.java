@@ -16,7 +16,9 @@ public class Spec {
     }
 
     public Spec(SpecId specId, String specName, Long storeId, Long createdBy) {
-        if (specId == null) throw new IllegalArgumentException("规格ID不能为空");
+        if (specId == null) {
+            throw new IllegalArgumentException("规格ID不能为空");
+        }
         if (specName == null || specName.trim().isEmpty()) {
             throw new IllegalArgumentException("规格名称不能为空");
         }

@@ -3,7 +3,6 @@
 -- Host: 127.0.0.1    Database: mall_goods
 -- ------------------------------------------------------
 -- Server version	8.4.5
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -18,7 +17,8 @@
 --
 -- Table structure for table `album`
 --
-
+create database if not exists mall_goods;
+use mall_goods;
 DROP TABLE IF EXISTS `album`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;

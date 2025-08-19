@@ -26,11 +26,21 @@ public class GoodsCommon {
     public GoodsCommon(GoodsCommonId commonId, GoodsName goodsName, BrandId brandId, 
                       CategoryId categoryId, StoreId storeId, BigDecimal price, 
                       String imageName, String goodsSpecNames) {
-        if (commonId == null) throw new RuntimeException("商品ID不能为空");
-        if (goodsName == null) throw new RuntimeException("商品名称不能为空");
-        if (categoryId == null) throw new RuntimeException("商品分类不能为空");
-        if (storeId == null) throw new RuntimeException("店铺ID不能为空");
-        if (price == null) throw new RuntimeException("商品价格不能为空");
+        if (commonId == null) {
+            throw new RuntimeException("商品ID不能为空");
+        }
+        if (goodsName == null) {
+            throw new RuntimeException("商品名称不能为空");
+        }
+        if (categoryId == null) {
+            throw new RuntimeException("商品分类不能为空");
+        }
+        if (storeId == null) {
+            throw new RuntimeException("店铺ID不能为空");
+        }
+        if (price == null) {
+            throw new RuntimeException("商品价格不能为空");
+        }
         
         this.commonId = commonId;
         this.goodsName = goodsName;
@@ -95,7 +105,7 @@ public class GoodsCommon {
     }
 
     private final GoodsCommonId commonId;
-    private final GoodsName goodsName;
+    private GoodsName goodsName;
     private BrandId brandId;
     private CategoryId categoryId;
     private CategoryId categoryId1;

@@ -2,15 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <artifactId>mall-goods-adapter-in</artifactId>
+    <name>mall-goods-adapter-in</name>
+
     <parent>
         <groupId>com.mall</groupId>
         <artifactId>mall-goods-adapter</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>mall-goods-adapter-in</artifactId>
-    <name>mall-goods-adapter-in</name>
-    <description>goods Service Inbound Adapters</description>
     <packaging>pom</packaging>
 
     <modules>
@@ -19,13 +19,5 @@
     </modules>
 
     <dependencies>
-        <!-- Application Layer -->
-        <dependency>
-            <groupId>com.mall</groupId>
-            <artifactId>mall-goods-application</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <!-- 移除Common Module（已通过应用层传递） -->
     </dependencies>
 </project>

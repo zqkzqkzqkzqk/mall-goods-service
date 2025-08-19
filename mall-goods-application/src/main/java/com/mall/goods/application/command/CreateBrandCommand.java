@@ -1,48 +1,48 @@
 package com.mall.goods.application.command;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-
 /**
- * 创建品牌命令
+ * 创建品牌DTO
+ * @param brandEnglish
+ * @param brandImage
+ * @param brandInitial
+ * @param brandName
+ * @param brandSort
+ * @param isRecommend
+ * @param showType
+ * @param createBy
  */
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class CreateBrandCommand {
-    /**
-     * 品牌名称
-     */
-    @NotBlank(message = "品牌名称不能为空")
-    private String name;
-
-    /**
-     * 品牌描述
-     */
-    private String description;
-
-    /**
-     * 品牌logo
-     */
-    private String logo;
-
-    /**
-     * 品牌首字母
-     */
-    private String firstLetter;
-
-    /**
-     * 排序
-     */
-    private Integer sort;
-
-    /**
-     * 是否显示
-     */
-    @NotNull(message = "是否显示不能为空")
-    private Boolean isShow;
-}
+public record CreateBrandCommand(
+        /**
+         * 品牌英文名
+         */
+        String brandEnglish,
+        /**
+         * 品牌图片
+         */
+        String brandImage,
+        /**
+         * 品牌首字母
+         */
+        String brandInitial,
+        /**
+         * 品牌中文名
+         */
+        String brandName,
+        /**
+         * 品牌排序
+         */
+        String brandSort,
+        /**
+         * 是否推荐
+         */
+        String isRecommend,
+        /**
+         * 是否显示
+         */
+        String showType,
+        /**
+         * 创建人
+         */
+        String createBy
+)
+{}

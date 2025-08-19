@@ -21,7 +21,9 @@ public class Brand {
     public Brand(BrandId brandId, String brandName, String brandEnglish, String brandInitial, 
                 String brandImage, Integer brandSort, Integer isRecommend, Integer showType, 
                 Long storeId, Integer applyState, Long createdBy) {
-        if (brandId == null) throw new IllegalArgumentException("品牌ID不能为空");
+        if (brandId == null) {
+            throw new IllegalArgumentException("品牌ID不能为空");
+        }
         if (brandName == null || brandName.trim().isEmpty()) {
             throw new IllegalArgumentException("品牌名称不能为空");
         }

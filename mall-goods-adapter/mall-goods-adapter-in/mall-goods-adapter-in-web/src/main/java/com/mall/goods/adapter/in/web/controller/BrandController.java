@@ -1,5 +1,6 @@
 package com.mall.goods.adapter.in.web.controller;
 
+import com.mall.goods.adapter.in.web.dto.CreateBrandRequest;
 import com.mall.goods.application.command.CreateBrandCommand;
 import com.mall.goods.application.port.in.BrandCreateUseCase;
 import com.mall.goods.common.Result;
@@ -35,8 +36,9 @@ public class BrandController {
      */
     @PostMapping("/create")
     @Operation(summary = "品牌创建", description = "管理员通过管理界面创建品牌")
-    public Result<Object> create(@Valid @RequestBody CreateBrandCommand command) {
-        brandCreateUseCase.createBrand(command);
-        return Result.success();
+    public Result<Long> create(@Valid @RequestBody CreateBrandRequest command) {
+        CreateBrandCommand createBrandCommand = new CreateBrandCommand(command.brandEnglish(), command.brandImage(), command.brandInitial(), command.brandName(), command.brandSort(), command.isRecommend(), command.showType(), command.createBy());
+        Long brand = brandCreateUseCase.createBrand(createBrandCommand);
+        return Result.success(brand);
     }
 }

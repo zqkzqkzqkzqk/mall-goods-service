@@ -13,7 +13,9 @@ public class Unit {
     }
 
     public Unit(UnitId unitId, String name, Integer sort, Long createdBy) {
-        if (unitId == null) throw new IllegalArgumentException("单位ID不能为空");
+        if (unitId == null) {
+            throw new IllegalArgumentException("单位ID不能为空");
+        }
         if (name == null || name.trim().isEmpty()) {
             throw new IllegalArgumentException("单位名称不能为空");
         }

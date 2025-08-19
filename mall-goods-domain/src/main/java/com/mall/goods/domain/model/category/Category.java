@@ -63,7 +63,7 @@ public class Category {
     }
 
     private final CategoryId categoryId;
-    private final String categoryName;
+    private String categoryName;
     private Integer categorySort;
     private final CategoryId parentId;
     private String appImage;

@@ -13,8 +13,12 @@ public class SpecValue {
     }
 
     public SpecValue(SpecValueId specValueId, SpecId specId, String specValueName, Long createdBy) {
-        if (specValueId == null) throw new IllegalArgumentException("规格值ID不能为空");
-        if (specId == null) throw new IllegalArgumentException("规格ID不能为空");
+        if (specValueId == null) {
+            throw new IllegalArgumentException("规格值ID不能为空");
+        }
+        if (specId == null) {
+            throw new IllegalArgumentException("规格ID不能为空");
+        }
         if (specValueName == null || specValueName.trim().isEmpty()) {
             throw new IllegalArgumentException("规格值名称不能为空");
         }
