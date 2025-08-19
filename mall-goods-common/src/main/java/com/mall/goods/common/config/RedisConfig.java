@@ -1,4 +1,4 @@
-package com.mall.user.common.config;
+package com.mall.goods.common.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;
